@@ -10,4 +10,10 @@ calcButton.addEventListener('click', ()=>{
     const tokesitesszam = tokesites_szam.value;
     const nevlegesszam = nevleges.value;
 
+    let Elteproginfocalculusegyketto = (nevlegesszam/(100 * tokesitesszam))+1;
+    Elteproginfocalculusegyketto = Math.pow(Elteproginfocalculusegyketto,tokesitesszam) - 1;
+    Elteproginfocalculusegyketto = Elteproginfocalculusegyketto * betetszam;
+
+    Actual.value = Elteproginfocalculusegyketto;
+
 });
